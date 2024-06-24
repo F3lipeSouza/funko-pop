@@ -1,0 +1,134 @@
+.Catalogo-title{
+    color: #555;
+}
+
+.Catalogo-title::after{
+    background-color: #fe7468;
+}
+
+.catalogo-text{
+    color: #555;
+}
+
+.catalogo-aling-text{
+    display: block;
+    padding: 5% 5% 5% 13%;
+}
+
+.layout-figure{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.figure{
+    position: relative;
+    top: auto;
+    width: 70rem;
+}
+
+.button{
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-image: linear-gradient(#fe7467, #fc3836) ;
+    border-radius: 2rem;
+    padding: 0.5rem 2.0rem;
+    margin-top:3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button:hover{
+    text-decoration: underline;
+}
+
+.hover-catalogo:hover{
+    color: #fff;
+}
+
+.header-catalogo{
+    background-image:url(/imagens-atualizadas/captainmarvelheader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.active-::after{
+    width: 7rem;
+}
+
+.card-align-catalogo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 48rem;
+    margin-left: 300px;
+
+}
+
+.card-catalogo{
+    position: absolute;
+    width: 600px;
+    
+}
+
+.catalogo-image{
+    width: 40rem;
+}
+
+.catalogo-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 8.5rem 12rem;
+    margin-left: 15rem;
+}
+
+.catalogo-list{
+    display: block;
+    list-style: none;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.catalogo-text{
+    padding-bottom:6px;
+    font-size: 24px;
+}
+
+.catalogo-price{
+    font-weight:bold ;
+}
+
+@media screen and (max-width: 1024px) {
+    .layout-figure{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .media-button{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .catalogo-aling-text{
+        padding: 7%;
+    }   
+}
+
+@media screen and (max-width:768px) {
+    .card-align-catalogo{
+        margin-top: 200px;
+        margin-left: 100px;
+    }
+
+    .card-catalogo{
+        width: 250px;
+    }
+
+    .catalogo-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

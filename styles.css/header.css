@@ -1,0 +1,79 @@
+.header{
+    height: 100vh;
+    background-image:url(/imagens-atualizadas/spidermanheader.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header-align{
+    display: flex;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    gap: 2.4rem;
+    align-items: center;
+}
+
+.header-logo{
+    display: block;
+    width: 15rem;
+}
+
+.header-logo-img{
+    width: 15rem;
+}
+
+.header-navigation-list{
+    display: flex;
+    gap: 2.4rem;
+    padding: 1.6rem;
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+.header-navigation-iten{
+    gap:50rem;
+    font-weight: 600;
+}
+
+a:hover{
+    color: #fe7467;
+}
+
+.iten-active::after{
+    display: block;
+    content: "";
+    width: 5rem;
+    height: 0.4rem;
+    background-color: #fe7467;
+    margin-top: 0.4px;
+    align-content: center;
+}
+
+.card-align{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.card{
+    width: 30rem;
+    margin: 20% 80% 30% 30%;
+    position: relative;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header-align{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 200PX;
+    }
+}
+
+

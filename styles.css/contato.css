@@ -1,0 +1,151 @@
+.header-contact{
+    background-image: url(/imagens-atualizadas/contatoheader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.card-align-contato{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30rem;
+    margin-left: 300px;
+
+}
+
+.card-contato{
+    width: 600px;
+
+}
+
+.contact-title{
+    color: #555;
+}
+
+.contact-title::after{
+    background-color: #fe7468;
+}
+
+.align-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.contact-text{
+    display: flex;
+    max-width: 40%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.align-contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+}
+
+.text-send{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 65px;
+    padding-right: 12px;
+}
+
+.text-send:not(:last-of-type){
+    row-gap: 12px;
+}
+
+.text-write{
+    width: 450px;
+    border-radius: 12px;
+    gap: 8px;
+    padding: 12px;
+    background-color: #e1eef5;
+    font-size: 18px;
+}
+
+.align-button{
+    display: flex;
+    justify-content: center;
+}
+
+.input-contact{
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #e1eef5;
+    font-size: 18px;
+}
+
+.submit-button{
+    width: 900px;
+    height: 50px;
+}
+
+input::placeholder, textarea::placeholder{
+    font-size: 18px;
+    padding-left: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .card-contato{
+        width: 400px;
+    }
+
+    .card-align-contato{
+        margin-top: 20rem;
+        margin-left: 250px;
+    }
+
+    .contact-text{
+        max-width: 70%;
+    }
+    
+    .input-contact{
+        margin-top: 0;
+        margin-bottom: 5px;
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-align{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-align-contato{
+        display: none;
+    }
+    
+    .align-contact{
+        display: block;
+
+    }
+
+    .text-send{
+        width: 700px;
+        height: 280px;
+    }
+
+    .text-write{
+        width: 690px;
+    }
+
+    .align-button{
+        justify-content: start;
+    }
+
+    .submit-button{
+        width: 700px;
+    }
+
+       
+
+}

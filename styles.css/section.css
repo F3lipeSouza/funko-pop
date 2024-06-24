@@ -1,0 +1,32 @@
+.section{
+    background-image: url(/imagens-atualizadas/thor_header.jpg);
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.section-text{
+    color: #fff;
+}
+
+@media screen and (max-width:1024px) {
+    .section{
+        background-image: linear-gradient(#fe7467, #fc3836);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .section{
+        height: 800px;
+    }
+
+    .section-text{
+        position: relative;
+        padding: 7%;
+        display: flex;
+    }
+}
